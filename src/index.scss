@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Staatliches&display=swap');
+
+
+$font-color: #1b1b1b;
+
+body {
+  margin: 0;
+  font: {
+    family: 'Space-Grotesk', sans-serif;
+    color: $font-color
+  }
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
