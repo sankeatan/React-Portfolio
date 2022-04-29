@@ -79,8 +79,9 @@ return (
   <Nav.Item >
     <a 
     className='custom-button'
-    href="#" > 
-      <FontAwesomeIcon icon={'arrow-up-right-from-square'} /> Resume
+    href="https://docs.google.com/document/d/1VpVuNW2n9f498naJ3X8M3ct1b9KsZkpfaU6UR69rUw4/edit" > 
+      <FontAwesomeIcon icon={'arrow-up-right-from-square'} /> 
+      Resume
     </a>
   </Nav.Item>
 </Nav>

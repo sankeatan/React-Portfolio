@@ -1,13 +1,13 @@
 import './index.scss';
-import { useState } from 'react';
-import { Card, Button } from 'react-bootstrap';
+// import { useState } from 'react';
+import { Card } from 'react-bootstrap';
 
 export default function ContributionCards({ contribution }){
-    const [open, setOpen] = useState(false);
-    const handleClick = function (){
-        setOpen(!open);
+    // const [open, setOpen] = useState(false);
+    // const handleClick = function (){
+    //     setOpen(!open);
 
-    }
+    // }
 return(
 <Card>
   <Card.Img src={`${contribution.img}`} />
