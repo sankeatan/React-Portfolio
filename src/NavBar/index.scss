@@ -34,6 +34,7 @@ h1 {
 
 .custom-button {
 	background-color: #86BBD8;
+	color: #000000;
 	text-decoration: none;
 	display: block;
 	font-family: 'Space Grotesk', sans-serif;
@@ -50,13 +51,14 @@ h1 {
 	family: 'Space Grotesk', sans-serif;
 	weight: 300;
 	}
-	padding: 1rem;
+	padding: 0px;
+	margin: 0px;
 }
 
 .custom-button:hover{
 	background-color: #63A46C;
 }
-.custom-buttom:active{
+.custom-button:active{
 	background-color: #63A46C;
 }
 

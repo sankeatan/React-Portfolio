@@ -45,6 +45,35 @@ return (
 				className="p-2 mx-2 text-dark custom-icon"
 			/>
 		</a>
+    {/* Mail link */}
+    <a
+					className="custom-icon"
+          href="mailto:cameron.clark1110@gmail.com"
+					target="_blank"
+					rel="noreferrer"
+					title="cameron.clark1110@gmail.com"
+				>
+					<FontAwesomeIcon
+						icon={'envelope'}
+						size="2x"
+						className="p-2 mx-2 text-dark custom-icon"
+					/>
+				</a>
+
+				{/* Phone link */}
+				<a
+          className="custom-icon"
+					href="tel:407-529-4690"
+					target="_blank"
+					rel="noreferrer"
+					title="(407) 529-4690"
+				>
+					<FontAwesomeIcon
+						icon={'phone'}
+						size="2x"
+						className="p-2 mx-2 text-dark custom-icon"
+					/>
+				</a>
   </div>
 
   {/* Navigation bar */}
@@ -60,13 +89,6 @@ return (
       className='custom-button'>
         About Me
       </a>
-  </Nav.Item>
-  <Nav.Item>
-        <a 
-        href='/contact' 
-        className='custom-button'>
-        Contact
-        </a>
   </Nav.Item>
   <Nav.Item >
         <a

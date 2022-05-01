@@ -1,0 +1,109 @@
+/* BEGIN CARD DESIGN */
+.contribution {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 30px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px;
+  }
+  
+  .contribution-img {
+    height: 70%;
+  }
+  
+  .contribution-description {
+    background-image: linear-gradient(0deg , #3f5efb, #fc466b);
+    border-radius: 30px;
+    position: absolute;
+    top: 55%;
+    left: -5px;
+    height: 65%;
+    width: 108%;
+    transform: skew(19deg, -9deg);
+  }
+  
+  .second .contribution-description {
+    background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
+  }
+  
+  .hero-logo {
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 35%;
+    left: 50px;
+    overflow:hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
+  }
+  
+  .hero-logo img {
+    height: 100%;
+  }
+  
+  .project-description {
+    position: absolute;
+    color: #fff;
+    font-weight: 100;
+    left: 90px;
+    bottom: 35%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+  
+  .repo-btn {
+    position: relative;
+    color: #fff;
+    padding: 1px 2px;
+    border: 1px solid #fff;
+  }
+  
+  .repo-btn a {
+    color: #fff;
+  }
+  
+  .live-btn {
+    position: relative;
+    color: #fff;
+    padding: 1px 2px;
+    border: 1px solid #fff;
+  }
+  
+  .live-btn a {
+    color: #fff;
+  }
+  
+  .btn-container{
+    display:flex;
+    justify-content: space-evenly;
+  }
+  
+  .hero-date {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    bottom: 10%;
+  }
+  /* END CARD DESIGN */
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: #eee;
+    min-height: 100vh;
+  }
+  .btn i:before {
+    width: 14px;
+    height: 14px;
+    position: fixed;
+    color: #fff;
+    background: #0077B5;
+    padding: 10px;
+    border-radius: 50%;
+    top:5px;
+    right:5px;
+  }
