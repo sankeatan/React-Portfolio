@@ -29,7 +29,7 @@ return (
 			<FontAwesomeIcon
 				icon={['fab', 'github']}
 				size="2x"
-				className='p-2 mx-2 text-dark custom-icon' 
+				className='p-2 mx-2 text-dark custom-icon grow' 
 			/>
 		</a>
 		<a
@@ -42,7 +42,7 @@ return (
 			<FontAwesomeIcon
 				icon={['fab', 'linkedin-in']}
 				size="2x"
-				className="p-2 mx-2 text-dark custom-icon"
+				className="p-2 mx-2 text-dark custom-icon grow"
 			/>
 		</a>
     {/* Mail link */}
@@ -56,7 +56,7 @@ return (
 					<FontAwesomeIcon
 						icon={'envelope'}
 						size="2x"
-						className="p-2 mx-2 text-dark custom-icon"
+						className="p-2 mx-2 text-dark custom-icon grow"
 					/>
 				</a>
 
@@ -71,7 +71,7 @@ return (
 					<FontAwesomeIcon
 						icon={'phone'}
 						size="2x"
-						className="p-2 mx-2 text-dark custom-icon"
+						className="p-2 mx-2 text-dark custom-icon grow"
 					/>
 				</a>
   </div>
