@@ -7,8 +7,10 @@ export default function Layout () {
         <>
             <div className='outlet'>
         <Outlet/>
-            </div>
+            </div >
+            <div className='navBar'>
         <NavBar />
+            </div>
         </>
     )
 }
