@@ -1,109 +1,102 @@
 /* BEGIN CARD DESIGN */
 .contribution {
-    display: inline-block;
-    position: relative;
-    width: 200px;
-    min-width: 200px;
-    height: 200px;
-    border-radius: 30px;
-    overflow:hidden;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
-    margin: 30px;
-  }
-  
-  .contribution-img {
-    height: 70%;
-  }
-  
-  .contribution-description {
-    background-image: linear-gradient(0deg , #3f5efb, #fc466b);
-    border-radius: 30px;
-    position: absolute;
-    top: 55%;
-    left: -5px;
-    height: 65%;
-    width: 108%;
-    transform: skew(19deg, -9deg);
-  }
-  
-  .second .contribution-description {
-    background-image: linear-gradient(-20deg , #bb7413, #e7d25c)
-  }
-  
-  .hero-logo {
-    height: 30px;
-    width: 30px;
-    border-radius: 20px;
-    background-color: #fff;
-    position: absolute;
-    bottom: 35%;
-    left: 50px;
-    overflow:hidden;
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.7);
-  }
-  
-  .hero-logo img {
-    height: 100%;
-  }
-  
-  .project-description {
-    position: absolute;
-    color: #fff;
-    font-weight: 100;
-    left: 90px;
-    bottom: 35%;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  }
-  
-  .repo-btn {
-    position: relative;
-    color: #fff;
-    padding: 1px 2px;
-    border: 1px solid #fff;
-  }
-  
-  .repo-btn a {
-    color: #fff;
-  }
-  
-  .live-btn {
-    position: relative;
-    color: #fff;
-    padding: 1px 2px;
-    border: 1px solid #fff;
-  }
-  
-  .live-btn a {
-    color: #fff;
-  }
-  
-  .btn-container{
-    display:flex;
-    justify-content: space-evenly;
-  }
-  
-  .hero-date {
-    position: absolute;
-    color: #fff;
-    left: 30px;
-    bottom: 10%;
-  }
-  /* END CARD DESIGN */
-  
-  body {
-    font-family: 'Open Sans', sans-serif;
-    margin: 0;
-    background-color: #eee;
-    min-height: 100vh;
-  }
-  .btn i:before {
-    width: 14px;
-    height: 14px;
-    position: fixed;
-    color: #fff;
-    background: #0077B5;
-    padding: 10px;
-    border-radius: 50%;
-    top:5px;
-    right:5px;
-  }
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  min-width: 200px;
+  height: 200px;
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.contribution-img {
+  height: 70%;
+}
+
+.contribution-container {
+  background-image: linear-gradient(0deg, #63A46C, #FED766);
+  border-radius: 30px;
+  position: absolute;
+  top: 55%;
+  left: -5px;
+  height: 65%;
+  width: 108%;
+  transform: skew(19deg, -9deg);
+}
+
+.contribution-description {
+  display: none;
+  position: absolute;
+  color: #fff;
+  font-weight: 100;
+  left: 20px;
+  bottom: 40%;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.btn-container{
+display: flex;
+}
+
+.btn {
+  position: relative;
+  background-color: #86BBD8;
+  padding: 1px 2px;
+  border-radius: 5px;
+  height: 25px;
+  width: 50px;
+  display: none;
+  text-align: center;
+}
+
+.btn a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.title{
+display: block;
+color: black;
+font-weight: 100;
+position: relative;
+bottom: 1.5rem;
+z-index: 1;
+}
+/* END CARD DESIGN */
+
+
+.contribution:hover .title{
+display: none;
+}
+.contribution:hover .btn{
+display: block;
+}
+.contribution:hover .project-description{
+display: block;
+}
+
+.btn:hover{
+animation: shadow-pulse 1s infinite;
+background-color: #63A46C;
+}
+
+@keyframes shadow-pulse
+{
+0% {
+  box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+}
+100% {
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+}
+}
+
+@keyframes fadeIn {
+0% {
+  opacity:0;
+}
+100% {
+  opacity:1;
+}
+}

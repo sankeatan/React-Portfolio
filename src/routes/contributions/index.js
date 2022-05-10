@@ -1,4 +1,4 @@
-import ContributionCards from './ContributionCards';
+import ContributionCard from './ContributionCard';
 import { contributionsData } from './contributionsData';
 
 export default function Contributions() {
@@ -7,7 +7,7 @@ export default function Contributions() {
             <h2 className="ps-3 me-5 mb-5">| Contributions</h2>
                 <div className='contribution-card-container'>
                 {contributionsData.map((contribution, index) => (
-                    <ContributionCards 
+                    <ContributionCard 
                     contribution={contribution} 
                     key={index}/>
         ))}

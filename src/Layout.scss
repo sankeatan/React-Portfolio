@@ -1,7 +1,21 @@
+$primary-color: #63A46C;
+$secondary-color: #FED766;
+$tertiary-color: #86BBD8;
+
 .outlet{
     height: 100vh;
     left: 20rem;
-    background-color: #63A46C;
+    background-color: $primary-color;
+}
+
+.navBar{
+    height: 100%;
+    width: 20rem;
+    position: fixed;
+	top: 0;
+	right: 0;
+    background-color: $secondary-color;
+	color: #1b1b1b;
 }
 
 @keyframes open-site{

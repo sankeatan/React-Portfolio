@@ -34,7 +34,7 @@ export const contributionsData = [
 		repo: 'https://github.com/sankeatan/Password-Generator',
 		img: 'https://i.imgur.com/Iwat2oW.png',
 		alt: 'A preview the Password Generator',
-        desc: 'A JavaScript app which generate a random password based on user inputs',
+        desc: 'Generate a random password based on user inputs',
 	},
 	{
 		title: 'Day Planner',
@@ -43,6 +43,6 @@ export const contributionsData = [
 		repo: 'https://github.com/sankeatan/Day-Planner',
 		img: 'https://i.imgur.com/FzppZdJ.png',
 		alt: 'A preview of the Day Planner project',
-        desc: 'A JavaScript app which allows users to save text to inputs separted by hour and color coded by their relation to the current time',
+        desc: 'Allows users to save text to inputs separted by hour and color',
 	}
 ];

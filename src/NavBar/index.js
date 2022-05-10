@@ -7,7 +7,7 @@ export default function NavBar (){
   
 return (
   // Beginning of Nav Bar
-<Nav justify defaultActiveKey="aboutme" className='nav-bar'>
+<Nav justify defaultActiveKey="aboutme" className='nav-container'>
     {/* Headshot */}
     <img
 		src="https://i.imgur.com/TVlTC1a.png"
@@ -77,7 +77,7 @@ return (
   </div>
 
   {/* Navigation bar */}
-
+<div className='btn-container'>
   <Nav.Item>
         <a href='/contributions' className='custom-button'>
         Contributions
@@ -106,5 +106,6 @@ return (
       Resume
     </a>
   </Nav.Item>
+  </div>
 </Nav>
 )}
