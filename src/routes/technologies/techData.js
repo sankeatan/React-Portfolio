@@ -9,6 +9,7 @@ export const techData = [
 			'HTML',
 			'CSS',
 			'Bootstrap',
+			'Styled-Components'
 		],
 		icon: 'laptop-code',
 	},

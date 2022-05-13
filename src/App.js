@@ -13,7 +13,7 @@ export default function App() {
     <div className='main-container'>
       <Routes>
         <Route path='/' element={<Layout /> }>
-          <Route index element={<Home />} />
+          <Route index element={<About />} />
           <Route path='aboutme' element={<About />} />
           <Route path='contributions' element={<Contributions />} />
           <Route path='technologies' element={<Technologies />} />
