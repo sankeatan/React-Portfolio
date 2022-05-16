@@ -3,9 +3,8 @@ $secondary-color: #FED766;
 $tertiary-color: #86BBD8;
 
 .outlet{
-    height: 100vh;
-    left: 20rem;
-    background-color: $primary-color;
+    height: 100%;
+    width: 100%;
 }
 
 .navBar{
@@ -16,9 +15,16 @@ $tertiary-color: #86BBD8;
 	right: 0;
     background-color: $secondary-color;
 	color: #1b1b1b;
+    z-index: 1;
 }
 
-@keyframes open-site{
-
-}
+@media only screen and (orientation: portrait) {
+    .outlet{
+        width: 100vw;
+    }
+    .navBar {
+        width: 100%;
+        height: 10rem;
+    }
+  }
 
