@@ -2,7 +2,7 @@ $primary-color: #63A46C;
 $secondary-color: #FED766;
 $tertiary-color: #86BBD8;
 
-img {
+.portrait {
 	height: 200px;
 	width: 200px;
 	background: {
@@ -76,7 +76,7 @@ h1 {
 }
 
 @media only screen and (orientation: portrait) {
-	img{
+	.portrait{
 		height: 150px;
 		width: 150px;
 	}
