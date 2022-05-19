@@ -2,50 +2,6 @@ $primary-color: #63A46C;
 $secondary-color: #FED766;
 $tertiary-color: #86BBD8;
 
-.portrait {
-	height: 200px;
-	width: 200px;
-	background: {
-		size: cover;
-		position: center;
-		}
-	border-radius: 100%;
-	box-shadow: 5px 5px 15px #000001e5;
-}
-
-h1 {
-	font: {
-		family: 'Staatliches', cursive;
-	}
-}
-
-.btn-container{
-	display:flex;
-	flex-direction:column;
-}
-
-.custom-button {
-	background-color: #86BBD8;
-	color: #000000;
-	text-decoration: none;
-	display: block;
-	font-family: 'Space Grotesk', sans-serif;
-	font-size: 1.5rem;
-	font-weight: 300;
-	padding: 1rem;
-	margin: 1rem;
-	border-radius: 10px;
-	width: 200px;
-}
-
-.custom-icon {
-	font: {
-	family: 'Space Grotesk', sans-serif;
-	weight: 300;
-	}
-	padding: 0px;
-	margin: 0px;
-}
 
 .hide {
 	display: none;
@@ -58,14 +14,6 @@ h1 {
 .custom-button:hover{
 	animation: shadow-pulse 1s infinite;
 	background-color: $primary-color;
-}
-
-.nav-container{
-	display:flex;
-	justify-content:center;
-	background-color: #FED766;
-	height: 100%;
-	width: 25rem;
 }
 
 @keyframes shadow-pulse
