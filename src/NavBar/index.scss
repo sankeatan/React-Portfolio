@@ -63,6 +63,9 @@ h1 {
 .nav-container{
 	display:flex;
 	justify-content:center;
+	background-color: #FED766;
+	height: 100%;
+	width: 25rem;
 }
 
 @keyframes shadow-pulse
@@ -75,24 +78,24 @@ h1 {
   }
 }
 
-@media only screen and (orientation: portrait) {
-	.portrait{
-		height: 150px;
-		width: 150px;
-	}
-	.btn-container{
-		position: relative;
-		flex-direction:row;
-		left: 6rem;
-		bottom: 7rem;
-	}
-	.custom-button {
-		font-size: .75rem;
-		font-weight: 150;
-		padding: .5rem;
-		margin: .5rem;
-		border-radius: 5px;
-		width: 100px;
-	}
-  }
+// @media only screen and (orientation: portrait) {
+// 	.portrait{
+// 		height: 150px;
+// 		width: 150px;
+// 	}
+// 	.btn-container{
+// 		position: relative;
+// 		flex-direction:row;
+// 		left: 6rem;
+// 		bottom: 7rem;
+// 	}
+// 	.custom-button {
+// 		font-size: .75rem;
+// 		font-weight: 150;
+// 		padding: .5rem;
+// 		margin: .5rem;
+// 		border-radius: 5px;
+// 		width: 100px;
+// 	}
+//   }
 

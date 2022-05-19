@@ -1,24 +1,35 @@
-import React from 'react';
-import { Routes, Route } from "react-router-dom";
+import React, { useState } from 'react';
 import './App.scss';
-import Layout from './Layout'
-import Home from './routes/home'
-import About from './routes/about'
-import Contributions from './routes/contributions'
-import Technologies from './routes/technologies';
+import About from './views/about'
+import Contributions from './views/contributions'
+import Technologies from './views/technologies';
+import NavBar from './NavBar';
 
 export default function App() {
+  
+  const [currentView, setCurrentView] = useState('About')
+
+  const renderView = () => {
+    switch (currentView) {
+      case 'About':
+        return (<About key='about'/>)
+      case 'Contributions':
+        return (<Contributions key='contributions'/>)
+      case 'Technologies':
+        return (<Technologies key='technologies'/>)
+    }
+  };
+
+  const handleViewChange = (view) => setCurrentView(view);
 
   return (
     <div className='main-container'>
-      <Routes>
-        <Route path='/' element={<Layout /> }>
-          <Route index element={<About />} />
-          <Route path='aboutme' element={<About />} />
-          <Route path='contributions' element={<Contributions />} />
-          <Route path='technologies' element={<Technologies />} />
-        </Route>
-    </Routes>
+      <div className='view'>
+      {renderView()}
+      </div>
+      <NavBar
+        currentView={currentView}
+        handleViewChange={handleViewChange}/>
     </div>
   );
 }

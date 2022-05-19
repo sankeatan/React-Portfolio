@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav } from 'react-bootstrap';
 import './index.scss'
 
-export default function NavBar (){
+export default function NavBar ({ handleViewChange }){
   
 return (
   // Beginning of Nav Bar
@@ -79,21 +79,26 @@ return (
   {/* Navigation bar */}
 <div className='btn-container'>
   <Nav.Item>
-        <a href='/contributions' className='custom-button'>
+        <a 
+			href='#contributions' 
+			className='custom-button'
+			onClick={() => handleViewChange('Contributions')}>
         Contributions
         </a>
   </Nav.Item>
   <Nav.Item >
       <a 
-      href='/aboutme'
-      className='custom-button'>
+      href='#aboutme'
+      className='custom-button'
+	  onClick={() => handleViewChange('About')}>
         About Me
       </a>
   </Nav.Item>
   <Nav.Item >
         <a
         className='custom-button'
-        href='/technologies' 
+        href='#technologies'
+		onClick={() => handleViewChange('Technologies')}
         >
         Technologies
         </a>
