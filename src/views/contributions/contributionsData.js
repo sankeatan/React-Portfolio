@@ -1,5 +1,14 @@
 export const contributionsData = [
 	{
+		title: 'Develop.This() Site',
+		languages: 'JavaScript, Express, React',
+		live: 'https://www.develop-this.org/',
+		repo: 'https://www.develop-this.org/',
+		img: 'https://i.imgur.com/sMPWiwy.png',
+		alt: 'A preview of develop.this() website',
+        desc: 'The official website for Develop.This()',
+	},
+	{
 		title: 'Social Network API',
 		languages: 'JavaScript, Express, MongoDB',
 		live: 'https://github.com/sankeatan/social-network-api',

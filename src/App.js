@@ -10,6 +10,7 @@ export default function App() {
   const [currentView, setCurrentView] = useState('About')
 
   const renderView = () => {
+    // eslint-disable-next-line default-case
     switch (currentView) {
       case 'About':
         return (<About key='about'/>)
