@@ -1,49 +1,5 @@
-$primary-color: #63A46C;
-$secondary-color: #FED766;
-$tertiary-color: #86BBD8;
-
-
-.hide {
-	display: none;
-}
-
 .grow { transition: all .2s ease-in-out; }
 
 .grow:hover { transform: scale(1.15); }
 
-.custom-button:hover{
-	animation: shadow-pulse 1s infinite;
-	background-color: $primary-color;
-}
-
-@keyframes shadow-pulse
-{
-  0% {
-    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
-  }
-  100% {
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-  }
-}
-
-// @media only screen and (orientation: portrait) {
-// 	.portrait{
-// 		height: 150px;
-// 		width: 150px;
-// 	}
-// 	.btn-container{
-// 		position: relative;
-// 		flex-direction:row;
-// 		left: 6rem;
-// 		bottom: 7rem;
-// 	}
-// 	.custom-button {
-// 		font-size: .75rem;
-// 		font-weight: 150;
-// 		padding: .5rem;
-// 		margin: .5rem;
-// 		border-radius: 5px;
-// 		width: 100px;
-// 	}
-//   }
 

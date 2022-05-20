@@ -79,11 +79,15 @@ return (
 		onClick={() => handleViewChange('Technologies')}>
         Technologies
     </CustomButton>
-    <CustomButton
-    href="https://docs.google.com/document/d/1VpVuNW2n9f498naJ3X8M3ct1b9KsZkpfaU6UR69rUw4/edit" > 
-      <FontAwesomeIcon icon={'arrow-up-right-from-square'} /> 
-      Resume
+	<a 
+		href="https://docs.google.com/document/d/1VpVuNW2n9f498naJ3X8M3ct1b9KsZkpfaU6UR69rUw4/edit?usp=sharing"
+		target="_blank"
+		rel='noreferrer'>
+    <CustomButton>
+    	<FontAwesomeIcon icon={'arrow-up-right-from-square'} /> 
+      		Resume
     </CustomButton>
+	</a>
   </ButtonContainer>
 </NavContainer>
 )}
