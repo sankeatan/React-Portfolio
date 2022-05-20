@@ -1,8 +1,15 @@
 export const contributionsData = [
 	{
+		title: 'DevelopThis Homepage',
+		languages: 'JavaScript, Express, React',
+		live: 'https://www.develop-this.org/',
+		img: 'https://i.imgur.com/sMPWiwy.png',
+		alt: 'A preview of develop.this() website',
+        desc: 'The official website for Develop.This()',
+	},
+	{
 		title: 'Social Network API',
 		languages: 'JavaScript, Express, MongoDB',
-		live: 'https://github.com/sankeatan/social-network-api',
 		repo: 'https://github.com/sankeatan/social-network-api',
 		img: 'https://i.imgur.com/sMPWiwy.png',
 		alt: 'A preview of code from the API',
@@ -11,7 +18,6 @@ export const contributionsData = [
 	{
 		title: 'Team Profile Generator',
 		languages: 'JavaScript, Inquirer, Jest',
-		live: 'https://github.com/sankeatan/EmployeeList',
 		repo: 'https://github.com/sankeatan/EmployeeList',
 		img: 'https://i.imgur.com/BLERPXI.png',
 		alt: 'A preview of a card from the Employee List Generator',
@@ -37,7 +43,7 @@ export const contributionsData = [
         desc: 'Generate a random password based on user inputs',
 	},
 	{
-		title: 'Day Planner',
+		title: 'Planner',
 		languages: 'JavaScript',
 		live: 'https://sankeatan.github.io/Day-Planner/',
 		repo: 'https://github.com/sankeatan/Day-Planner',

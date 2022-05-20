@@ -13,7 +13,9 @@ const shadowPulse = keyframes`
 
 export const Title = styled.h2`
     display: block;
-    position: relative;
+    position: absolute;
+    align-text: left;
+    word-wrap: normal;
     color: #86BBD8;
     font-weight: 600;
     z-index: 10;
@@ -26,7 +28,7 @@ export const Button = styled.a`
     padding: 1px 2px;
     border-radius: 5px;
     right: 10px;
-    top: 25px;
+    top: 70px;
     height: 35px;
     width: 75px;
     display: none;
@@ -93,7 +95,7 @@ export const ButtonContainer = styled.div`
     display: flex;
     justify-content: space-evenly;
     position: relative;
-    align-items: center;
+    word-wrap: normal;
     left: 10px;
     bottom: 130px;
 `;
