@@ -1,4 +1,7 @@
 import styled, { keyframes } from "styled-components";
+const primaryColor = '#63A46C';
+const secondaryColor = '#FED766';
+const tertiaryColor = '#86BBD8';
 
 const shadowPulse = keyframes`
 {
@@ -13,9 +16,11 @@ const shadowPulse = keyframes`
 
 export const NavContainer = styled.div`
 {
+    right: 0rem;
+    position: absolute;
     display:flex;
     justify-content:center;
-    background-color: #FED766;
+    background-color: ${secondaryColor};
     height: 100vh;
     width: 20rem;
   }
@@ -68,7 +73,7 @@ export const ButtonContainer = styled.div`
 
 export const CustomButton = styled.div`
 {
-  background-color: #86BBD8;
+  background-color: ${tertiaryColor};
 	color: #000000;
 	text-decoration: none;
 	display: block;
@@ -79,6 +84,12 @@ export const CustomButton = styled.div`
 	margin: 1rem;
 	border-radius: 10px;
 	width: 200px;
+  text-align: center;
+  &:hover,
+  &:focus {
+    background-color: ${primaryColor};
+    animation: ${shadowPulse} 1s infinite;
+  }
 }
 `;
 
