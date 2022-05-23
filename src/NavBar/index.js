@@ -18,7 +18,6 @@ return (
     <Portrait
 		src="https://i.imgur.com/TVlTC1a.png"
 		alt="Headshot of Cameron Clark"
-		className="mb-4"
 	  />
   <Name>Cameron Clark</Name>
 
