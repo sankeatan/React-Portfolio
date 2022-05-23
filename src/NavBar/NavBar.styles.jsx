@@ -19,23 +19,32 @@ export const NavContainer = styled.div`
     right: 0rem;
     position: absolute;
     display:flex;
+    flex-direction: row;
     justify-content:center;
     background-color: ${secondaryColor};
-    height: 100vh;
-    width: 20rem;
-  }
+    width: 100%;
+    height: 30%;
+    @media only screen and (min-width: 768px) {
+      height: 100vh;
+      width: 30%;
+      flex-direction: none;
+      }
 }
 `;
 
 export const Portrait = styled.img`
 {
-  position: absolute;
-  height: 200px;
-	width: 200px;
-	background-size: cover;
-  background-position: center;
+  position: relative;
+  top: 25px;
+  height: 150px;
+	width: 150px;
 	border-radius: 100%;
 	box-shadow: 5px 5px 15px #000001e5;
+  @media only screen and (min-width: 768px) {
+    height: 200px;
+    width: 200px;
+    top: 5px;
+    }
 }
 `;
 
@@ -44,6 +53,7 @@ export const Name = styled.h1`
   position: absolute;
   top: 13rem;
   font-family: 'Staatliches', cursive;
+  display: flex;
 }
 `;
 
@@ -85,8 +95,8 @@ export const CustomButton = styled.div`
 	border-radius: 10px;
 	width: 200px;
   text-align: center;
-  &:hover,
-  &:focus {
+  
+  &:hover, click {
     background-color: ${primaryColor};
     animation: ${shadowPulse} 1s infinite;
   }

@@ -15,4 +15,5 @@ export const ContributionsContainer = styled.div
     padding-right: 8rem;
     margin-left: 5rem;
     height: 100vh;
+    overflow: scroll;
 }`;

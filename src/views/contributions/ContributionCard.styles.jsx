@@ -14,12 +14,13 @@ const shadowPulse = keyframes`
 export const Title = styled.h2`
     display: block;
     position: absolute;
-    align-text: left;
+    top: 30px;
+    text-align: center;
     word-wrap: normal;
     color: #86BBD8;
     font-weight: 600;
     z-index: 10;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
 `;
 
 export const Button = styled.a`
@@ -31,13 +32,13 @@ export const Button = styled.a`
     top: 70px;
     height: 35px;
     width: 75px;
-    display: none;
+    display: block;
     text-align: center;
     text-decoration: none;
     color: black;
     z-index: 1;
 
-    &:hover {
+    &:hover, click {
         animation: ${shadowPulse} 1s infinite;
         background-color: #63A46C;
       }
@@ -65,12 +66,6 @@ export const ContributionCard = styled.div`
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
     margin: 30px;
 
-    &:hover ${Title} {
-        display: none;
-      }
-    &:hover ${Button} {
-        display: block;
-      }
 `;
 
 export const ContributionImg = styled.img`
@@ -88,7 +83,6 @@ export const ContributionContainer = styled.div`
     width: 108%;
     transform: skew(19deg, -9deg);
 `;
-
 
 
 export const ButtonContainer = styled.div`

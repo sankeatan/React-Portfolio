@@ -14,8 +14,8 @@ export default function ContributionCards({ contribution }){
       <ContributionCard>
         <ContributionImg src={`${contribution.img}`} />
         <ContributionContainer />
+        <Title>{contribution.title}</Title>
         <ButtonContainer>
-          <Title>{contribution.title}</Title>
           <Button href={`${contribution.repo}`}>Repo</Button>
         </ButtonContainer>
       </ContributionCard>
@@ -26,8 +26,8 @@ export default function ContributionCards({ contribution }){
       <ContributionCard>
         <ContributionImg src={`${contribution.img}`} />
         <ContributionContainer />
+        <Title>{contribution.title}</Title>
         <ButtonContainer>
-          <Title>{contribution.title}</Title>
           <Button href={`${contribution.live}`}>Live</Button>
         </ButtonContainer>
       </ContributionCard>
@@ -38,8 +38,8 @@ export default function ContributionCards({ contribution }){
     <ContributionCard>
       <ContributionImg src={`${contribution.img}`} />
       <ContributionContainer />
+      <Title>{contribution.title}</Title>
         <ButtonContainer>
-          <Title>{contribution.title}</Title>
           <Button href={`${contribution.live}`}>Live</Button>
           <Button href={`${contribution.repo}`}>Repo</Button>
         </ButtonContainer>

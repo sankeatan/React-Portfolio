@@ -15,11 +15,11 @@ export default function NavBar ({ handleViewChange }){
   
 return (
 <NavContainer>
-    <Portrait
+	<Portrait
 		src="https://i.imgur.com/TVlTC1a.png"
 		alt="Headshot of Cameron Clark"
 	  />
-  <Name>Cameron Clark</Name>
+	<Name>Cameron Clark</Name>
 
 
 <CustomIconContainer>
