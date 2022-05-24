@@ -11,9 +11,12 @@ export const ContributionCardContainer =styled.div
 export const ContributionsContainer = styled.div
 `{
     font-size: 1.5rem;
-    padding-top: 4rem;
-    padding-right: 8rem;
-    margin-left: 5rem;
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     height: 100vh;
-    overflow: scroll;
-}`;
+    
+    @media only screen and (min-width: 768px){
+        padding-top: 5rem;
+    }
+`;

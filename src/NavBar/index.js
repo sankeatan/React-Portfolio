@@ -8,6 +8,7 @@ import {
 	CustomIcon,
 	NavContainer,
 	Portrait,
+	HeadShotContainer
 } from './NavBar.styles';
 import './index.scss'
 
@@ -15,81 +16,70 @@ export default function NavBar ({ handleViewChange }){
   
 return (
 <NavContainer>
+	<HeadShotContainer>
 	<Portrait
 		src="https://i.imgur.com/TVlTC1a.png"
 		alt="Headshot of Cameron Clark"
 	  />
 	<Name>Cameron Clark</Name>
+	</HeadShotContainer>
+	<CustomIconContainer>
+		<CustomIcon
+			href="https://www.github.com/sankeatan"
+			target="_blank"
+			rel="noreferrer"
+			title="Cameron's Github">
+				<FontAwesomeIcon
+					icon={['fab', 'github']}
+					size="2x"
+					className='p-2 mx-2 text-dark grow'/>
+			</CustomIcon>
+ 		<CustomIcon
+			href="https://www.linkedin.com/in/cameronclark1110/"
+			target="_blank"
+			rel="noreferrer"
+			title="Cameron's LinkedIn">
+			<FontAwesomeIcon
+				icon={['fab', 'linkedin-in']}
+				size="2x"
+				className="p-2 mx-2 text-dark grow"/>
+			</CustomIcon>
+		<CustomIcon
+    		href="mailto:cameron.clark1110@gmail.com"
+			target="_blank"
+			rel="noreferrer"
+			title="cameron.clark1110@gmail.com">
+			<FontAwesomeIcon
+				icon={'envelope'}
+				size="2x"
+				className="p-2 mx-2 text-dark grow"/>
+			</CustomIcon>
+		<CustomIcon
+			href="tel:407-529-4690"
+			target="_blank"
+			rel="noreferrer"
+			title="(407) 529-4690">
+			<FontAwesomeIcon
+				icon={'phone'}
+				size="2x"
+				className="p-2 mx-2 text-dark grow"/>
+			</CustomIcon>
+		</CustomIconContainer>
 
-
-<CustomIconContainer>
-<CustomIcon
-	href="https://www.github.com/sankeatan"
-	target="_blank"
-	rel="noreferrer"
-	title="Cameron's Github">
-	<FontAwesomeIcon
-		icon={['fab', 'github']}
-		size="2x"
-		className='p-2 mx-2 text-dark grow'/>
-	</CustomIcon>
- <CustomIcon
-	href="https://www.linkedin.com/in/cameronclark1110/"
-	target="_blank"
-	rel="noreferrer"
-	title="Cameron's LinkedIn">
-	<FontAwesomeIcon
-		icon={['fab', 'linkedin-in']}
-		size="2x"
-		className="p-2 mx-2 text-dark grow"/>
-	</CustomIcon>
-<CustomIcon
-    href="mailto:cameron.clark1110@gmail.com"
-	target="_blank"
-	rel="noreferrer"
-	title="cameron.clark1110@gmail.com">
-	<FontAwesomeIcon
-		icon={'envelope'}
-		size="2x"
-		className="p-2 mx-2 text-dark grow"/>
-	</CustomIcon>
-<CustomIcon
-	href="tel:407-529-4690"
-	target="_blank"
-	rel="noreferrer"
-	title="(407) 529-4690">
-	<FontAwesomeIcon
-		icon={'phone'}
-		size="2x"
-		className="p-2 mx-2 text-dark grow"/>
-	</CustomIcon>
-</CustomIconContainer>
-
-<ButtonContainer>
-	<CustomIcon
-		onClick={()=>{}}>
-		<FontAwesomeIcon
-			icon={'bars'}
-			size="3x"
-			className="p-2 mx-2 text-dark grow hide"/>
-	</CustomIcon>
+	<ButtonContainer>
     <CustomButton
-		className='show'
 		onClick={() => handleViewChange('Contributions')}>
         Contributions
     </CustomButton>
     <CustomButton
-		className='show'
 	  onClick={() => handleViewChange('About')}>
         About Me
     </CustomButton>
     <CustomButton
-		className='show'
 		onClick={() => handleViewChange('Technologies')}>
         Technologies
     </CustomButton>
 	<a
-		className='show'
 		href="https://docs.google.com/document/d/1VpVuNW2n9f498naJ3X8M3ct1b9KsZkpfaU6UR69rUw4/edit?usp=sharing"
 		target="_blank"
 		rel='noreferrer'>
@@ -98,6 +88,6 @@ return (
       		Resume
     </CustomButton>
 	</a>
-  </ButtonContainer>
+  	</ButtonContainer>
 </NavContainer>
 )}
