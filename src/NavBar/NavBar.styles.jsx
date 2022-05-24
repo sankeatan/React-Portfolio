@@ -23,6 +23,7 @@ export const NavContainer = styled.div`
     background-color: ${secondaryColor};
     width: 100%;
     height: 30%;
+    justify-content: space-evenly;
     @media only screen and (min-width: 768px) {
       align-items: center;
       height: 100vh;
@@ -36,6 +37,8 @@ export const HeadShotContainer = styled.div`{
   margin: 5px;
   display:flex;
   flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
 }`;
 
 export const Portrait = styled.img`
@@ -60,12 +63,15 @@ export const Name = styled.h1`
   position: relative;
   font-family: 'Staatliches', cursive;
   margin: 5px;
+  text-align: center;
 }
 `;
 
 export const CustomIconContainer = styled.div`
 {
   position: relative;
+  display: flex;
+  flex-direction: row;
   @media only screen and (min-width: 768px)
   {
     display: flex;
@@ -77,16 +83,11 @@ export const CustomIconContainer = styled.div`
 export const CustomIcon = styled.a`
 {
   font-family: 'Space Grotesk', sans-serif;
-  font-weight: 300;
-  font-padding: 0px;
-  font-margin: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 2px;
   display: flex;
   position: relative;
-  @media only screen and (min-width: 768px)
-  {
-    display: flex
-    font-weight: 300;
-  }
 }
 `;
 
@@ -122,9 +123,10 @@ export const CustomButton = styled.div`
     animation: ${shadowPulse} 1s infinite;
   }
   @media only screen and (min-width: 768px) {
+    padding: 5px;
     font-size: 2rem;
     height: 75px;
-	  width: 300px;
+	  width: auto;
     margin: 10px;
   }
 

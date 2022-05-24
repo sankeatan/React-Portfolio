@@ -22,7 +22,6 @@ return (
 		alt="Headshot of Cameron Clark"
 	  />
 	<Name>Cameron Clark</Name>
-	</HeadShotContainer>
 	<CustomIconContainer>
 		<CustomIcon
 			href="https://www.github.com/sankeatan"
@@ -32,7 +31,7 @@ return (
 				<FontAwesomeIcon
 					icon={['fab', 'github']}
 					size="2x"
-					className='p-2 mx-2 text-dark grow'/>
+					className='text-dark grow'/>
 			</CustomIcon>
  		<CustomIcon
 			href="https://www.linkedin.com/in/cameronclark1110/"
@@ -42,7 +41,7 @@ return (
 			<FontAwesomeIcon
 				icon={['fab', 'linkedin-in']}
 				size="2x"
-				className="p-2 mx-2 text-dark grow"/>
+				className="text-dark grow"/>
 			</CustomIcon>
 		<CustomIcon
     		href="mailto:cameron.clark1110@gmail.com"
@@ -52,7 +51,7 @@ return (
 			<FontAwesomeIcon
 				icon={'envelope'}
 				size="2x"
-				className="p-2 mx-2 text-dark grow"/>
+				className="text-dark grow"/>
 			</CustomIcon>
 		<CustomIcon
 			href="tel:407-529-4690"
@@ -62,9 +61,11 @@ return (
 			<FontAwesomeIcon
 				icon={'phone'}
 				size="2x"
-				className="p-2 mx-2 text-dark grow"/>
+				className="text-dark grow"/>
 			</CustomIcon>
 		</CustomIconContainer>
+	</HeadShotContainer>
+	
 
 	<ButtonContainer>
     <CustomButton
