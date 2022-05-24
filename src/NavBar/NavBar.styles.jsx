@@ -23,6 +23,7 @@ export const NavContainer = styled.div`
     background-color: ${secondaryColor};
     width: 100%;
     height: 30%;
+    justify-content: space-evenly;
     @media only screen and (min-width: 768px) {
       align-items: center;
       height: 100vh;
@@ -122,6 +123,7 @@ export const CustomButton = styled.div`
     animation: ${shadowPulse} 1s infinite;
   }
   @media only screen and (min-width: 768px) {
+    padding: 5px;
     font-size: 2rem;
     height: 75px;
 	  width: auto;
