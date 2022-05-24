@@ -66,19 +66,30 @@ return (
 </CustomIconContainer>
 
 <ButtonContainer>
+	<CustomIcon
+		onClick={()=>{}}>
+		<FontAwesomeIcon
+			icon={'bars'}
+			size="3x"
+			className="p-2 mx-2 text-dark grow hide"/>
+	</CustomIcon>
     <CustomButton
+		className='show'
 		onClick={() => handleViewChange('Contributions')}>
         Contributions
     </CustomButton>
     <CustomButton
+		className='show'
 	  onClick={() => handleViewChange('About')}>
         About Me
     </CustomButton>
     <CustomButton
+		className='show'
 		onClick={() => handleViewChange('Technologies')}>
         Technologies
     </CustomButton>
-	<a 
+	<a
+		className='show'
 		href="https://docs.google.com/document/d/1VpVuNW2n9f498naJ3X8M3ct1b9KsZkpfaU6UR69rUw4/edit?usp=sharing"
 		target="_blank"
 		rel='noreferrer'>

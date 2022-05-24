@@ -51,17 +51,28 @@ export const Portrait = styled.img`
 export const Name = styled.h1`
 {
   position: absolute;
-  top: 13rem;
+  top: 11rem;
   font-family: 'Staatliches', cursive;
   display: flex;
+  @media only screen and (min-width: 768px) {
+    top: 13rem;
+    }
 }
 `;
 
 export const CustomIconContainer = styled.div`
 {
   position: absolute;
-  flex-direction: row;
-  top: 16rem;
+  flex-direction: column;
+  left: 5rem;
+  top: 0.5rem;
+  @media only screen and (min-width: 768px)
+  {
+    position: relative;
+    flex-direction: column;
+    top: 1rem;
+    left: 0rem;
+    }
 }`;
 
 export const CustomIcon = styled.a`
@@ -70,15 +81,28 @@ export const CustomIcon = styled.a`
   font-weight: 300;
   font-padding: 0px;
   font-margin: 0px;
+  display: flex;
+  @media only screen and (min-width: 768px)
+  {
+    display: flex
+    font-weight: 300;
+  }
 }
 `;
 
 export const ButtonContainer = styled.div`
 {
     position: absolute;
+    left: 30rem;
     display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    top: 1rem;
+    @media only screen and (min-width: 768px)
+    {
     flex-direction:column;
     top: 18rem;
+    }
 }`;
 
 export const CustomButton = styled.div`
@@ -86,7 +110,7 @@ export const CustomButton = styled.div`
   background-color: ${tertiaryColor};
 	color: #000000;
 	text-decoration: none;
-	display: block;
+	display: none;
 	font-family: 'Space Grotesk', sans-serif;
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -100,6 +124,22 @@ export const CustomButton = styled.div`
     background-color: ${primaryColor};
     animation: ${shadowPulse} 1s infinite;
   }
+
+  @media only screen and (min-width: 768px)
+  {
+  background-color: ${tertiaryColor};
+	color: #000000;
+	text-decoration: none;
+	display: block;
+	font-family: 'Space Grotesk', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+	padding: 1rem;
+	margin: 1rem;
+	border-radius: 10px;
+	width: 200px;
+  text-align: center;
+    }
 }
 `;
 

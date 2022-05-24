@@ -7,5 +7,4 @@ export const AboutMe =styled.div
     padding-right: 10rem;
     margin-left: 4rem;
     height: 100vh;
-    overflow: scroll;
 }`;
