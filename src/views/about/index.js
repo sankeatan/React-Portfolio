@@ -1,8 +1,10 @@
-import './index.scss';
+import {
+    AboutMe
+} from './index.styles'
 
 export default function About() {
 	return (
-		<div className="aboutme-container">
+		<AboutMe>
 			<h2 className="ps-3 me-5 mb-5">| About Me</h2>
 				<p>
 					I am a full stack web developer passionate about creating technologies
@@ -23,6 +25,6 @@ export default function About() {
 					can bring to the table - these are all qualities that my professional
 					history has given to me.
                 </p>
-        </div>
+        </AboutMe>
 	);
 }

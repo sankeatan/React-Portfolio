@@ -43,7 +43,7 @@ export const contributionsData = [
         desc: 'Generate a random password based on user inputs',
 	},
 	{
-		title: 'Planner',
+		title: 'Day Planner',
 		languages: 'JavaScript',
 		live: 'https://sankeatan.github.io/Day-Planner/',
 		repo: 'https://github.com/sankeatan/Day-Planner',

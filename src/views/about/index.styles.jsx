@@ -1,14 +1,6 @@
 import styled from "styled-components";
 
-export const ContributionCardContainer =styled.div 
-`{
-    display: inline-flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    row-gap: 30px;
-}`;
-
-export const ContributionsContainer = styled.div
+export const AboutMe =styled.div 
 `{
     font-size: 1.5rem;
     padding-top: 2.5rem;
@@ -19,4 +11,4 @@ export const ContributionsContainer = styled.div
     @media only screen and (min-width: 768px){
         padding-top: 5rem;
     }
-`;
+}`;
